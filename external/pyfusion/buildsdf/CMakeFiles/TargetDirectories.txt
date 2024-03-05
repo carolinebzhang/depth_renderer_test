@@ -1,0 +1,4 @@
+/Users/carolinezhang/Downloads/depth_renderer/external/pyfusion/build/CMakeFiles/fusion_cpu.dir
+/Users/carolinezhang/Downloads/depth_renderer/external/pyfusion/build/CMakeFiles/fusion_gpu.dir
+/Users/carolinezhang/Downloads/depth_renderer/external/pyfusion/build/CMakeFiles/edit_cache.dir
+/Users/carolinezhang/Downloads/depth_renderer/external/pyfusion/build/CMakeFiles/rebuild_cache.dir

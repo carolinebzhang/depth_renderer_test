@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -msse -msse2 -msse3 -msse4.2 -fPIC -fopenmp -D_FORCE_INLINES -Wall -O3 -DNDEBUG -shared -Wl,-soname,libfusion_cpu.so -o libfusion_cpu.so CMakeFiles/fusion_cpu.dir/fusion.cpp.o  /home/aditya/miniconda3/envs/py3.9_cu116_torch1130/lib/libcudart_static.a -ldl -Wl,-Bstatic -lrt -Wl,-Bdynamic 

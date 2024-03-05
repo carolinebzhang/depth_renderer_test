@@ -1,0 +1,56 @@
+Category, ShapeNet ID, Total Objects, Rendered Objects, Rendered path
+airplane, 02691156, 4045, 4045, shapenet_renders
+bag, 02773838, 83, 83, shapenet_renders
+basket, 02801938, 113, 113, shapenet_renders
+bathtub, 02808440, 856, 0, 
+bed, 02818832, 233, 0, 
+bench, 02828884, 1813, 0, 
+birdhouse, 02843684, 73, 0, 
+bookshelf, 02871439, 452, 0, 
+bottle, 02876657, 498, 498, shapenet_renders
+bowl, 02880940, 186, 186, shapenet_renders
+bus, 02924116, 939, 939, shapenet_renders
+cabinet, 02933112, 1571, 0, 
+camera, 02942699, 113, 108, shapenet_renders
+can, 02946921, 108, 108, shapenet_renders
+cap, 02954340, 56, 56, shapenet_renders
+car, 02958343, 3514, 3514, shapenet_renders
+cellphone, 02992529, 831, 831, shapenet_renders
+chair, 03001627, 6778, 6778, shapenet_renders
+clock, 03046257, 651, 651, shapenet_renders
+dishwasher, 03207941, 93, 0, 
+display, 03211117, 1093, 0, 
+earphone, 03261776, 73, 73, shapenet_renders
+faucet, 03325088, 744, 0, 
+filecabinet, 03337140, 298, 0, 
+flowerpot, 03991062, 602, 602, shapenet_renders
+guitar, 03467517, 797, 0, 
+helmet, 03513137, 162, 162, shapenet_renders
+jar, 03593526, 596, 596, shapenet_renders
+keyboard, 03085013, 65, 0, 
+knife, 03624134, 424, 424, shapenet_renders
+lamp, 03636649, 2318, 2318, shapenet_renders
+laptop, 03642806, 460, 460, shapenet_renders
+loudspeaker, 03691459, 1597, 0, 
+mailbox, 03710193, 94, 0, 
+microphone, 03759954, 67, 67, shapenet_renders
+microwaves, 03761084, 152, 0, 
+motorbike, 03790512, 337, 337, shapenet_renders
+mug, 03797390, 214, 84, shapenet_renders
+piano, 03928116, 239, 0, 
+pillow, 03938244, 96, 0, 
+pistol, 03948459, 307, 0, 
+printer, 04004475, 166, 0, 
+remote, 04074963, 66, 66, shapenet_renders
+rifle, 04090263, 2373, 0, 
+rocket, 04099429, 85, 0, 
+skateboard, 04225987, 152, 0, 
+sofa, 04256520, 3173, 3173, shapenet_renders
+stove, 04330267, 218, 0, 
+table, 04379243, 8436, 0, 
+telephone, 04401088, 1089, 1089, shapenet_renders
+tower, 04460130, 133, 0, 
+train, 04468005, 389, 389, shapenet_renders
+trashbin, 02747177, 343, 343, shapenet_renders
+washer, 04554684, 169, 0, 
+watercraft, 04530566, 1939, 1939, shapenet_renders

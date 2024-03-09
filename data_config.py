@@ -5,11 +5,10 @@ import os
 import os.path as osp
 from datetime import datetime
 #from huggingface_hub import DatasetCard
-from huggingface_hub import login
-login()
-import datasets
-shapenet_normalized_path = datasets.load_dataset("ShapeNet/ShapeNetCore")
-
+#from huggingface_hub import login
+#login()
+#import datasets
+#shapenet_normalized_path = datasets.load_dataset("ShapeNet/ShapeNetCore")
 shapenet_categlory_pair = {
     'table' : '04379243',
     'jar' : '03593526',
@@ -89,6 +88,8 @@ dataset_dir = '/users/czhan157/Downloads/depth_renderer_test'
 # shapenet_normalized_path = '/home/gridsan/aagarwal/Research/phd/datasets/ShapeNetCore_Zip'
 #shapenet_normalized_path = osp.join(dataset_dir, 'ShapeNetCore_Zip')
 # shapenet_normalized_path = './datasets/ShapeNetCore.v2_normalized'
+shapenet_normalized_path = './ShapeNetCore'
+
 # shapenet_normalized_path = './datasets/snet_test'
 # shapenet_rendering_path = './datasets/snet_renderings'
 # shapenet_rendering_path = './datasets/shapenet_sample_renderings'

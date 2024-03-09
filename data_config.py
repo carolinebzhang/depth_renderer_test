@@ -88,7 +88,7 @@ dataset_dir = '/users/czhan157/Downloads/depth_renderer_test'
 # shapenet_normalized_path = '/home/gridsan/aagarwal/Research/phd/datasets/ShapeNetCore_Zip'
 #shapenet_normalized_path = osp.join(dataset_dir, 'ShapeNetCore_Zip')
 # shapenet_normalized_path = './datasets/ShapeNetCore.v2_normalized'
-shapenet_normalized_path = './ShapeNetCore'
+shapenet_normalized_path = '/users/czhan157/Downloads/depth_renderer_test/ShapeNetCore'
 
 # shapenet_normalized_path = './datasets/snet_test'
 # shapenet_rendering_path = './datasets/snet_renderings'

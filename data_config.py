@@ -4,6 +4,11 @@
 import os
 import os.path as osp
 from datetime import datetime
+from huggingface_hub import DatasetCard
+from huggingface_hub import login
+login()
+import datasets
+shapenet_normalized_path = datasets.load_dataset("ShapeNet/ShapeNetCore")
 
 shapenet_categlory_pair = {
     'table' : '04379243',
@@ -71,7 +76,7 @@ our_categories = [shapenet_categlory_pair[cat] for cat in our_categories]
 
 # dataset_dir = '../../datasets/depth_renderer_dataset'
 # dataset_dir = '../../datasets'
-dataset_dir = '/home/gridsan/aagarwal/Research/phd/datasets'
+dataset_dir = '/users/czhan157/Downloads/depth_renderer_test'
 
 # shapenet_path = './datasets/ShapeNetCore.v2'
 # shapenet_path = '/home/aditya/Research/phd/code/datasets/ShapeNetCore.v2'
@@ -82,7 +87,7 @@ dataset_dir = '/home/gridsan/aagarwal/Research/phd/datasets'
 # shapenet_normalized_path = osp.join(dataset_dir, 'test_shapenet_core')
 # shapenet_normalized_path = '/home/gridsan/aagarwal/Research/phd/datasets/depth_renderer_dataset/test_shapenet_core'
 # shapenet_normalized_path = '/home/gridsan/aagarwal/Research/phd/datasets/ShapeNetCore_Zip'
-shapenet_normalized_path = osp.join(dataset_dir, 'ShapeNetCore_Zip')
+#shapenet_normalized_path = osp.join(dataset_dir, 'ShapeNetCore_Zip')
 # shapenet_normalized_path = './datasets/ShapeNetCore.v2_normalized'
 # shapenet_normalized_path = './datasets/snet_test'
 # shapenet_rendering_path = './datasets/snet_renderings'

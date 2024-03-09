@@ -4,7 +4,7 @@
 import os
 import os.path as osp
 from datetime import datetime
-from huggingface_hub import DatasetCard
+#from huggingface_hub import DatasetCard
 from huggingface_hub import login
 login()
 import datasets

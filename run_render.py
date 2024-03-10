@@ -82,10 +82,12 @@ if __name__ == '__main__':
         # print(f'Batch id is {batch_id}')
         file_name = str(batch_id) + '_' + os.path.basename(g_result_dict)
         print(file_name)
+        print('model view path')
         single_model_view_path = os.path.join(model_view_dir, file_name)
         model_view_paths.append(single_model_view_path)
-
+        print(single_model_view_path)
         with open(single_model_view_path, 'wb') as f:
+            print('in the pickle dump')
             pickle.dump(result_per_group, f)
 
     pool = multiprocessing.Pool(processes=count)

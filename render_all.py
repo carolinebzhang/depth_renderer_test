@@ -156,7 +156,8 @@ def render(viewpoint, viewpoint_id, rendering_dir):
 
     if g_background_image_path == 'TRANSPARENT':
         #bpy.context.scene.render.alpha_mode = g_background_image_path
-        bpy.context.scene.render.color.alpha_mode = True #g_background_image_path
+        #bpy.context.scene.render.color.alpha_mode = True #g_background_image_path
+        bpy.context.scene.render.film_transparent = True
         #bpy.data.scenes[“Scene”].render.alpha_mode : [“SKY”, “TRANSPARENT”] is 
         #now bpy.data.scenes[“Scene”].render.film_transparent : [0, 1] 
         #Here’s hoping Google finds this answer for the next coder.

@@ -383,11 +383,11 @@ def get_3x4_RT_matrix_from_blender(cam):
     print(R_world2bcam)
     print(location)
     print(type(location))
-    T_world2bcam = -1*R_world2bcam * location
-
+    #T_world2bcam = -1*R_world2bcam * location
+    T_world2bcam = -1*(R_world2bcam @ location)
     # Build the coordinate transform matrix from world to computer vision camera
-    R_world2cv = R_bcam2cv*R_world2bcam*R_blender2shapenet
-    T_world2cv = R_bcam2cv*T_world2bcam
+    R_world2cv = R_bcam2cv@R_world2bcam@R_blender2shapenet
+    T_world2cv = R_bcam2cv@T_world2bcam
 
     # put into 3x4 matrix
     RT = Matrix((

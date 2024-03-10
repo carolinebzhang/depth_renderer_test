@@ -155,7 +155,11 @@ def render(viewpoint, viewpoint_id, rendering_dir):
     cam_obj.rotation_euler[2] = cam_rot[2]
 
     if g_background_image_path == 'TRANSPARENT':
-        bpy.context.scene.render.alpha_mode = g_background_image_path
+        #bpy.context.scene.render.alpha_mode = g_background_image_path
+        bpy.context.scene.render.film_transparent = g_background_image_path
+        #bpy.data.scenes[“Scene”].render.alpha_mode : [“SKY”, “TRANSPARENT”] is 
+        #now bpy.data.scenes[“Scene”].render.film_transparent : [0, 1] 
+        #Here’s hoping Google finds this answer for the next coder.
     else:
         background_images = os.listdir(g_background_image_path)
         image_name = random.choice(background_images)

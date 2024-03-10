@@ -89,8 +89,10 @@ if __name__ == '__main__':
         with open(single_model_view_path, 'wb') as f:
             print('in the pickle dump')
             pickle.dump(result_per_group, f)
-
+            print('after pickle dump')
+    print('b4 mp')
     pool = multiprocessing.Pool(processes=count)
+    print('after mp')
     start = time()
     # print(model_view_paths)
     # assert False

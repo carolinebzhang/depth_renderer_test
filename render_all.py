@@ -380,6 +380,9 @@ def get_3x4_RT_matrix_from_blender(cam):
     # Convert camera location to translation vector used in coordinate changes
     # T_world2bcam = -1*R_world2bcam*cam.location
     # Use location from matrix_world to account for constraints:
+    print(R_world2bcam)
+    print(location)
+    print(type(location))
     T_world2bcam = -1*R_world2bcam * location
 
     # Build the coordinate transform matrix from world to computer vision camera

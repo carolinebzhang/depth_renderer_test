@@ -96,6 +96,9 @@ if __name__ == '__main__':
     start = time()
     # print(model_view_paths)
     # assert False
+    print('b4 map')
     pool.map(render_cmd, model_view_paths)
+    print(model_view_paths)
+    print('after map')
     end = time()
     print('Time elapsed: %f.' % (end-start))

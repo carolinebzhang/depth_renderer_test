@@ -20,7 +20,9 @@ def render_cmd(result_dict):
     command = [g_blender_excutable_path, '--background', '--python', 'render_all.py', '--', result_dict]
     # subprocess.run(command)
     # suppress blender outputs because its too much
-    subprocess.run(command, stdout=subprocess.DEVNULL)
+    print('hello')
+    subprocess.run(command) #, stdout=subprocess.DEVNULL)
+    print('done')
 
 def group_by_cpu(result_list, count):
     '''

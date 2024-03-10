@@ -52,9 +52,11 @@ def clear_mesh():
             bpy.data.images.remove(block)
 
     bpy.ops.object.select_all(action='DESELECT')
+    print(bpy.data.objects)
     for obj in bpy.data.objects:
+        print(obj)
         if obj.type == 'MESH' or obj.type == 'EMPTY':
-            obj.select = True
+            obj.select_set(True) #= True
     bpy.ops.object.delete()
 
 def scene_setting_init(use_gpu):
@@ -412,11 +414,14 @@ if __name__ == '__main__':
     args = parse_args()
 
     init_all()
-
+    print('render all args dict')
+    print(args.dict)
     result_list = pickle.load(open(args.dict, 'rb'))
+    print(result_list)
 
     cam_K_path = os.path.join(camera_setting_path, 'cam_K')
     cam_RT_path = os.path.join(camera_setting_path, 'cam_RT')
+
     if not os.path.exists(cam_K_path):
         os.makedirs(cam_K_path)
     if not os.path.exists(cam_RT_path):

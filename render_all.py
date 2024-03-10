@@ -227,7 +227,8 @@ def render_objs_by_one_vp(obj_pathes, viewpoint):
             os.makedirs(rendering_dir, exist_ok=True)
 
         clear_mesh()
-        bpy.ops.import_scene.obj(filepath=obj_path)
+        bpy.ops.wm.obj_import(filepath=obj_path)
+        #bpy.ops.import_scene.obj(filepath=obj_path)
         set_image_path(rendering_dir)
         set_depth_path(rendering_dir)
         render(viewpoint, 1, rendering_dir)
@@ -447,5 +448,6 @@ if __name__ == '__main__':
 
         clear_mesh()
 
-        bpy.ops.import_scene.obj(filepath=model.path)
+        #bpy.ops.import_scene.obj(filepath=model.path)
+        bpy.ops.wm.obj_import(filepath=model.path)
         render_obj_by_vp_lists(rendering_dir, model.vps)

@@ -9,7 +9,7 @@ import sys
 sys.path.append('../')
 from data_config import shapenet_categlory_pair, synset_category_pair
 imageio.plugins.freeimage.download()
-
+from datasets import load_dataset
 def read_obj(model_path, flags = ('v')):
     fid = open(model_path, 'r', encoding="utf-8")
 

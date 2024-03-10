@@ -18,7 +18,7 @@ blender_dir = '/users/czhan157'
 blender_dirs = glob(blender_dir + '/*')
 # g_blender_excutable_path = '/home/gridsan/aagarwal/Research/phd/tools/blender-2.79b-linux-glibc219-x86_64/blender'
 #g_blender_excutable_path = blender_dirs[random.randint(0, len(blender_dirs) - 1)] + '/blender-2.79b-linux-glibc219-x86_64/blender'
-g_blender_excutable_path = '/users/czhan157/blender-2.79b-linux-glibc219-x86_64/blender'
+g_blender_excutable_path = '/opt/blender-git/build_linux/bin/blender'
 
 #if you have multiple viewpoint files, add to the dict
 #files contains azimuth,elevation,tilt angles and distance for each row

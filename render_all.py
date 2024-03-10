@@ -22,7 +22,9 @@ import bpy
 from mathutils import Matrix
 import argparse
 
-abs_path = os.path.abspath(__file__)
+#abs_path = os.path.abspath(__file__)
+abs_path = os.path.abspath('/users/czhan157/Downloads/depth_renderer_test/render_all.py')
+
 sys.path.append(os.path.dirname(abs_path))
 
 from render_helper import *

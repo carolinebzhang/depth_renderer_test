@@ -20,6 +20,9 @@ blender_dirs = glob(blender_dir + '/*')
 #g_blender_excutable_path = blender_dirs[random.randint(0, len(blender_dirs) - 1)] + '/blender-2.79b-linux-glibc219-x86_64/blender'
 g_blender_excutable_path = '/opt/blender-git/build_linux/bin/blender'
 
+#download 2.79 executable on machine, within the container just change the command so its to the executable.
+#
+
 #if you have multiple viewpoint files, add to the dict
 #files contains azimuth,elevation,tilt angles and distance for each row
 g_view_point_file = './view_points.txt'
@@ -50,13 +53,13 @@ g_use_film_transparent = True
 g_rotation_mode = 'XYZ'
 
 #output:
-g_color_mode = 'RGB'
+g_color_mode = 'RGBA'
 g_color_depth = '16'
 g_file_format = 'OPEN_EXR'
 g_use_file_extension = True
 
 #enum in [‘BW’, ‘RGB’, ‘RGBA’], default ‘BW’
-g_rgb_color_mode = 'RGB'
+g_rgb_color_mode = 'RGBA'
 #enum in [‘8’, ‘10’, ‘12’, ‘16’, ‘32’], default ‘8’
 g_rgb_color_depth = '16'
 g_rgb_file_format = 'PNG'

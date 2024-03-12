@@ -231,7 +231,7 @@ def load_data_path(shapenet_path, shapenet_renders_path, category_ids):
         #category_paths_filtered = [category_path for category_path in category_paths if category_path.split('/')[-3] not in instances]
         print('Category {}; Instances rendered : {}, instances to be rendered : {}, total instances : {}'.format(category_id, len(instances), len(category_paths), len(category_paths)))
         #data_paths.extend(category_paths_filtered)
-        if len(category_paths > 100):
+        if len(category_paths) > 100:
             category_paths = category_paths[:100]
         data_paths.extend(category_paths)
     

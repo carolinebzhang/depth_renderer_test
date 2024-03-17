@@ -10,15 +10,16 @@ dest_dir="/users/czhan157/Downloads/depth_renderer_test/distinct_angles"
 mkdir -p "$dest_dir"
 
 # Function to copy images to distinct folders
+mkdir -p "$dest_folder/001"
+mkdir -p "$dest_folder/002"
+mkdir -p "$dest_folder/003"
+mkdir -p "$dest_folder/004"
+mkdir -p "$dest_folder/005"
+mkdir -p "$dest_folder/006"
+
 copy_images() {
     local source_folder="$1"
     #local dest_folder="$dest_dir/$num"
-    mkdir -p "$dest_folder/001"
-    mkdir -p "$dest_folder/002"
-    mkdir -p "$dest_folder/003"
-    mkdir -p "$dest_folder/004"
-    mkdir -p "$dest_folder/005"
-    mkdir -p "$dest_folder/006"
     for image in "$source_folder"/*.png; do
         if [[ -f "$image" ]]; then
             # Extract the number part of the filename

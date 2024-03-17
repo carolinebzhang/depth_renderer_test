@@ -6,16 +6,6 @@ source_dir="/users/czhan157/Downloads/depth_renderer_test/rgba_6_renders"
 # Destination directory
 dest_dir="/users/czhan157/Downloads/depth_renderer_test/distinct_angles"
 
-# Create destination directory if it doesn't exist
-mkdir -p "$dest_dir"
-
-# Function to copy images to distinct folders
-mkdir -p "$dest_folder/001"
-mkdir -p "$dest_folder/002"
-mkdir -p "$dest_folder/003"
-mkdir -p "$dest_folder/004"
-mkdir -p "$dest_folder/005"
-mkdir -p "$dest_folder/006"
 
 copy_images() {
     local source_folder="$1"

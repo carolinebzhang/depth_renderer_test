@@ -19,15 +19,8 @@ copy_images() {
             # Extract the number part of the filename
             num=$(basename "$image" | grep -oE '[0-9]+')
 
-            # Extract the last three characters (e.g., 001, 002, etc.)
-            num_suffix="${num: -3}"
-
-            # Create destination folder based on the extracted number suffix
-            dest_subfolder="$dest_folder/$num_suffix"
-            mkdir -p "$dest_subfolder"
-
             # Copy the image to the corresponding destination folder
-            cp "$image" "$dest_subfolder"
+            cp "$image" "$dest_folder"
         fi
     done
 }
@@ -35,9 +28,6 @@ copy_images() {
 # Loop through each folder in the source directory
 for folder in "$source_dir"/*/; do
     if [[ -d "$folder" ]]; then
-        # Extract the last part of the folder name
-        folder_name=$(basename "$folder")
-
         # Loop through each subfolder in the current folder
         for subfolder in "$folder"/*/; do
             if [[ -d "$subfolder" ]]; then
